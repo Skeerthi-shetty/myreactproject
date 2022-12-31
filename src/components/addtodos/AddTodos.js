@@ -169,58 +169,9 @@ function AddTodos() {
    
    useEffect(()=>{
     getTodos();
-    countStreaks();
-   },[])
-
-  
-   let[suncount,setCount]=useState(0);
-   let[moncount,setCount1]=useState(0);
-   let[tuecount,setCount2]=useState(0);
-   let[wedcount,setCount3]=useState(0);
-   let[thurscount,setCount4]=useState(0);
-   let[fricount,setCount5]=useState(0);
-   let[satcount,setCount6]=useState(0);
-
-   function countStreaks(){
     
-    setCount(0);
-    setCount1(0);
-    setCount2(0);
-    setCount3(0);
-    setCount4(0);
-    setCount5(0);
-    setCount6(0);
+   },[]);
 
-    getTodos();
-
-
-   for(let todoObj of todos){
-    if(todoObj.day==="Sunday"){
-      setCount(suncount+1);
-    }
-    else if(todoObj.day==="Monday"){
-      setCount1(moncount+1);
-    }
-    else if(todoObj.day==="Tuesday"){
-      setCount2(tuecount+1);
-    }
-    else if(todoObj.day==="Wednesday"){
-      setCount3(wedcount+1);
-    }
-    else if(todoObj.day==="Thursday"){
-      setCount4(thurscount+1);
-    }
-    else if(todoObj.day==="Friday"){
-      setCount5(fricount+1);
-    }
-    else if(todoObj.day==="Monday"){
-      setCount6(satcount+1);
-    }
-   }
-  }
-  
-
-    
   return (
   <div>
    
@@ -228,13 +179,6 @@ function AddTodos() {
 
       {err.length!==0&&<p className="display-4 fw-bold text-center text-danger">{err}</p>}
 
-      <p className="fw-bold">countersun:{suncount}</p>
-      <p className="fw-bold">countermon:{moncount}</p>
-      <p className="fw-bold">countertue:{tuecount}</p>
-      <p className="fw-bold">counterwed:{wedcount}</p>
-      <p className="fw-bold">counterthurs:{thurscount}</p>
-      <p className="fw-bold">counterfri:{fricount}</p>
-      <p className="fw-bold">countersat:{satcount}</p>
 
 
       {/*responsive form*/}
@@ -262,6 +206,10 @@ function AddTodos() {
              <select {...register("starttime",{required:true})}
               className="form-select" id="starttime" defaultValue={"DEFAULT"}>
                 <option value="DEFAULT" disabled>Choose Start Time...</option>
+                <option value="5 AM">5 AM</option>
+                <option value="6 AM">6 AM</option>
+                <option value="7 AM">7 AM</option>
+                <option value="8 AM">8 AM</option>
                 <option value="9 AM">9 AM</option>
                 <option value="10 AM">10 AM</option>
                 <option value="11 AM">11 AM</option>
@@ -271,6 +219,10 @@ function AddTodos() {
                 <option value="3 PM">3 PM</option>
                 <option value="4 PM">4 PM</option>
                 <option value="5 PM">5 PM</option>
+                <option value="6 PM">6 PM</option>
+                <option value="7 PM">7 PM</option>
+                <option value="8 PM">8 PM</option>
+                <option value="9 PM">9 PM</option>
 
              </select>
           {errors.starttime?.type==="required"&&<p className="text-danger fw-bold fs-6">*Start-timeis Required</p>}  
@@ -283,6 +235,10 @@ function AddTodos() {
              <select {...register("endtime",{required:true})}
               className="form-select" id="endtime" defaultValue={"DEFAULT"}>
                 <option value="DEFAULT" disabled>Choose End Time...</option>
+                <option value="5 AM">5 AM</option>
+                <option value="6 AM">6 AM</option>
+                <option value="7 AM">7 AM</option>
+                <option value="8 AM">8 AM</option>
                 <option value="9 AM">9 AM</option>
                 <option value="10 AM">10 AM</option>
                 <option value="11 AM">11 AM</option>
@@ -292,6 +248,10 @@ function AddTodos() {
                 <option value="3 PM">3 PM</option>
                 <option value="4 PM">4 PM</option>
                 <option value="5 PM">5 PM</option>
+                <option value="6 PM">6 PM</option>
+                <option value="7 PM">7 PM</option>
+                <option value="8 PM">8 PM</option>
+                <option value="9 PM">9 PM</option>
 
              </select>
           {errors.endtime?.type==="required"&&<p className="text-danger fw-bold fs-6">*End-Time is Required</p>}  
@@ -332,28 +292,12 @@ function AddTodos() {
 
          {/*day*/}
 
-          <div>
-             <label htmlFor='day' className='fs-5 labels '>Day</label>
-             <select {...register("day",{required:true})}
-              className="form-select" id="status" defaultValue={"DEFAULT"}>
-                <option value="DEFAULT" disabled>Choose Day...</option>
-                <option value="Sunday">Sunday</option>
-                <option value="Monday">Monday</option>
-                <option value="Tuesday">Tuesday</option>
-                <option value="Wednesday">Wednesday</option>
-                <option value="Thursday">Thursday</option>
-                <option value="Friday">Friday</option>
-                <option value="Saturday">Saturday</option>
-                              
-
-             </select>
-          {errors.status?.type==="required"&&<p className="text-danger fw-bold fs-6">*Status is Required</p>}  
-          </div>
+         
             
             {/*Submit Button*/}
           <div>
          
-           <button type="submit" onClick={countStreaks} className="text-center btn btn-dark rounded p-1.5 mt-4"><FaPlusCircle className="button-icon "/>Add Todo</button>
+           <button type="submit"  className="text-center btn btn-dark rounded p-1.5 mt-4"><FaPlusCircle className="button-icon "/>Add Todo</button>
            <button type="submit" className="btn btn-danger mt-4" onClick={deleteEverything}>Clear List</button>
           </div>
 
@@ -409,6 +353,8 @@ function AddTodos() {
                 <option value="5 PM">5 PM</option>
                 <option value="6 PM">6 PM</option>
                 <option value="7 PM">7 PM</option>
+                <option value="8 PM">8 PM</option>
+                <option value="9 PM">9 PM</option>
 
              </select>
              </div>
@@ -435,6 +381,8 @@ function AddTodos() {
                 <option value="5 PM">5 PM</option>
                 <option value="6 PM">6 PM</option>
                 <option value="7 PM">7 PM</option>
+                <option value="8 PM">8 PM</option>
+                <option value="9 PM">9 PM</option>
 
              </select>
        
