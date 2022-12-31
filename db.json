@@ -1,0 +1,40 @@
+{
+  "todos": [
+    {
+      "name": "walking",
+      "starttime": "DEFAULT",
+      "endtime": "DEFAULT",
+      "category": "DEFAULT",
+      "status": "DEFAULT",
+      "day": "Sunday",
+      "id": 1
+    },
+    {
+      "name": "walking",
+      "starttime": "DEFAULT",
+      "endtime": "DEFAULT",
+      "category": "DEFAULT",
+      "status": "DEFAULT",
+      "day": "Monday",
+      "id": 2
+    },
+    {
+      "name": "walking",
+      "starttime": "DEFAULT",
+      "endtime": "DEFAULT",
+      "category": "DEFAULT",
+      "status": "DEFAULT",
+      "day": "Tuesday",
+      "id": 3
+    },
+    {
+      "name": "walking",
+      "starttime": "DEFAULT",
+      "endtime": "DEFAULT",
+      "category": "DEFAULT",
+      "status": "DEFAULT",
+      "day": "Saturday",
+      "id": 4
+    }
+  ]
+}

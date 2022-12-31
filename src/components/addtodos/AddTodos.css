@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Crimson+Text:wght@600&family=Dancing+Script&family=Leckerli+One&family=Montserrat:wght@200;500&family=Mukta:wght@300&family=Pacifico&family=Playball&family=Poppins:wght@300&family=Righteous&family=Rokkitt&family=Rubik+Puddles&family=Solway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Crimson+Text:wght@600&family=Dancing+Script&family=Leckerli+One&family=Montserrat:wght@200;500&family=Mukta:wght@300&family=Pacifico&family=Playball&family=Poppins:wght@300&family=Righteous&family=Rokkitt&family=Rubik+Puddles&family=Solway&display=swap');
+
+.form{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Righteous', cursive;
+
+}
+
+table,td,tr,th{
+    
+    border: 2px solid rgb(6, 6, 6);
+  
+    border-collapse: collapse;
+    margin:2px;
+    padding:4px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+
+
+}
+th{
+    color:rgb(242, 195, 239);
+}
+
+.button-icon,.btn{
+    margin-right:10px ;
+}
+
+#name,#category,#status,#starttime,#endtime{
+    color:rgb(90, 94, 237);
+}

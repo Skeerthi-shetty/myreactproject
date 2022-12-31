@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Berkshire+Swash&family=Crimson+Text:wght@600&family=Dancing+Script&family=Leckerli+One&family=Montserrat:wght@200;500&family=Mukta:wght@300&family=Pacifico&family=Playball&family=Poppins:wght@300&family=Righteous&family=Rokkitt&family=Rubik+Puddles&family=Solway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Crimson+Text:wght@600&family=Dancing+Script&family=Leckerli+One&family=Montserrat:wght@200;500&family=Mukta:wght@300&family=Pacifico&family=Playball&family=Poppins:wght@300&family=Righteous&family=Rokkitt&family=Rubik+Puddles&family=Solway&display=swap');
+.image{
+    margin-left:40px;
+}
+.app-logo-name{
+    font-family: 'Berkshire Swash', cursive;
+}
+.links{
+    font-family: 'Righteous', cursive;
+}
